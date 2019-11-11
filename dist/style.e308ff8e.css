@@ -1,0 +1,160 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*::before,::after{
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    max-height: 100%;
+}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+ .close{
+     width: 20px;
+     line-height: 20px;
+     position: absolute;
+     top:2px;
+     right:2px;
+     background-color:#0282B9 ;
+     color: white;
+     border: 1px solid #0282B9;
+     border-radius: 5px;
+     text-align: center;
+     display: none;
+     cursor:default;
+ }
+ .siteItem:hover >.close{
+display: block;
+ }
+ body{
+ /*border: 1px solid red ;
+ 作用页面是元素撑开的高度 */
+ background-color:rgb(239, 239, 239);
+ /* 作用页面是整个网页  */
+} 
+.siteHeader{
+    margin:20px ; 
+}
+@media(min-width:500px){
+    .siteHeader{
+        margin: 50px 0;   
+    }
+}
+@media(min-width:500px){
+    .searchForm{
+        max-width: 400px;
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+}
+.searchForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.searchForm input{
+width: 100%;
+margin-right:10px;
+height: 40px;
+padding:0 10px;
+border:none;
+border:1px solid #ddd;
+border-radius: 4px
+}
+.searchForm button{
+    white-space: nowrap;
+    padding:0  28px;
+    border:none;   
+    border:1px solid #ddd;
+    border-radius: 4px;
+    color: white;
+    background-color: #0282B9;
+    font-size: 16px;
+}
+.siteMain{
+    margin:20px 20px;
+}
+@media(min-width:500px){
+    .siteMain{
+        max-width: 900px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+}
+.siteList {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+@media(min-width:500px){   
+    .siteList {
+        margin-right: -25px;
+        justify-content: flex-start;
+        /* 覆盖pace-between */
+    
+    }
+    .siteList li{
+    margin-right:25px;}
+}
+.siteList .siteItem {  
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.siteList .siteItem > .logo{
+    font-size:64px;
+    width: 64px;
+    line-height: 64px;
+    text-align: center;
+}
+.siteList .siteItem > .link{
+font-size: 14px;
+margin-top:8px;
+}
+.siteList .addButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 20px 0;
+    width: 160px;
+    /* padding: 10px 20px; */
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+}
+.siteList .addButton .icon{
+    font-size: 64px;
+}
+.siteList .addButton > .link{
+    font-size: 14px;
+    margin-top:8px;
+    }
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
